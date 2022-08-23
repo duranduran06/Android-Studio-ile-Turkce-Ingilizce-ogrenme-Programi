@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#12476A"
+    tools:context=".TestActivity">
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/butontasar"
+        android:onClick="a"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/soru"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/soru"
+        app:layout_constraintTop_toBottomOf="@+id/soru" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/butontasar"
+        android:onClick="b"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/buttonA"
+        app:layout_constraintStart_toStartOf="@+id/buttonA"
+        app:layout_constraintTop_toBottomOf="@+id/buttonA" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/butontasar"
+        android:onClick="c"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/buttonB"
+        app:layout_constraintStart_toStartOf="@+id/buttonB"
+        app:layout_constraintTop_toBottomOf="@+id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/butontasar"
+        android:onClick="d"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/buttonC"
+        app:layout_constraintStart_toStartOf="@+id/buttonC"
+        app:layout_constraintTop_toBottomOf="@+id/buttonC" />
+
+    <TextView
+        android:id="@+id/skor"
+        android:layout_width="413dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-1dp"
+        android:background="#AE9E0F"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/soru"
+        android:layout_width="281dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#CC9C9C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/skor"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/skor"
+        app:layout_constraintTop_toBottomOf="@+id/skor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

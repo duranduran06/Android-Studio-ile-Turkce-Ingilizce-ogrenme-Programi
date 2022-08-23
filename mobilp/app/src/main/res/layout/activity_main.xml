@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkap"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button7"
+        android:onClick="testgit"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="30dp"
+        android:background="#1C768C"
+        android:text="TEST"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonTelaffuz"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:background="#1C768C"
+        android:text="TELAFFUZ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        android:onClick="telaffuzagit"
+        />
+
+    <Button
+        android:id="@+id/buttonhikayegit"
+        android:onClick="buttonhikayegit"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:background="#1C768C"
+        android:text="HİKAYE"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:background="#1C768C"
+        android:text="ÇIKIŞ"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonhikayegit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonhikayegit"
+        app:layout_constraintTop_toBottomOf="@+id/buttonhikayegit"
+
+        />
+
+    <Button
+        android:onClick="oyungit"
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="35dp"
+        android:background="#1C768C"
+        android:text="OYUN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTelaffuz"
+        app:layout_constraintStart_toStartOf="@+id/buttonTelaffuz"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTelaffuz" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="427dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unnamed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
